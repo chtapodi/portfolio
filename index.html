@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="Engineering Portfolio" content="">
+    <meta name="Xavier Quinn" content="">
+
+    <title>Xavier</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Custom CSS -->
+    <link href="./css/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Xavier Quinn
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#hexacopter">Hexacopter</a>
+                </li>
+
+                <li>
+                    <a href="#llnl">Image Fluid Simulation</a>
+                </li>
+
+                <li>
+                    <a href="#seebeck">Bio Seebeck Genorator</a>
+                </li>
+
+                <li>
+                    <a href="#hand">Mechanical Hand</a>
+                </li>
+
+                <li>
+                    <a href="#iot">IoT Automation</a>
+                </li>
+
+                <li>
+                    <a href="#syncing">Media Syncing</a>
+                </li>
+
+                <li>
+                    <a href="#unlocker">Door Unlocker</a>
+                </li>
+                <li>
+                    <a href="#current">Current Projects</a>
+                </li>
+
+                <li>
+                    <a href="#misc">Miscellaneous</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Xavier Quinn</h1>
+                        <h4>Computer Engineering Major at Union College</h4>
+                        <br/>
+
+
+                        <div id="hexacopter">
+                            <h2>Semi-Autonomous Hexacopter</h2>
+                            <h4>2015-2016</h4>
+                            <p>This project's objective was to make a small, airborne, fully autonimous drone that followed a user. Possible applications include lighting, video recording, navigation assistance, etc.</p>
+                            <p>Two main problems were addressed in the design and construction of this project. The first was to create a multicopter with enough lift to carry any equipment required, and the second was to design a method for locating and following the user.</p>
+                            <p>To address the issue of lift, I created a custom hexacopter, controlled by an Arduino Nano. The Nano sent signals that imitated those from a receiver. By using a prebuilt flight control system, I was able to use pre-built precisely tuned sensors and flight controllers. This allowed me to focus on other components of the project, such as the tracking algorithm and hexcopter logistics.</p>
+                            <p>After several iterations of the hexcopter's tracking methods, I settled on a system which utilized a camera to track the location of color patterns.</p>
+                            <p>Below are several videos displaying the final design in flight. Due to safety concerns, only the rotation was autonimous. However, the other degrees of motion were all tested individually and had worked as well.</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lwPd3lndL5c" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8aUR0Q3wsgI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br>
+                            <p>Details of the entire process are provided below.</p>
+                            <br>
+                            <h3>RSSI Trilateration</h3>
+                            <p>My first method for tracking was based on using the <a href="https://en.wikipedia.org/wiki/Received_signal_strength_indication" target="_blank">RSSI signal</a> from my phones hotspot.</p>
+                            <p>To do this I used an electric imp based wireless board, and developed several methods of honing in on the phones signal. The largest issue I came across for this method was due to signal strength being logarithmic, so the values became indiscernible once any real distance away from my phone.</p>
+                            <p>The method I came up with involved moving in a direction until the strength changed, noting how far that was, and then turning and repeating that proccess. This gave three points along with the signal strength at each of them, which allowed the calculation of what angle my phones hotspot was at in relation to it. It would then travel in this direction until the signal strength began to decrease, when it would repeat the proccess again.</p>
+                            <p>Unfortunately the changes in signal strength where so slight that this method would only work over a very large area, so I had to find a better method.</p>
+                            <br/>
+                            <h3>Signal Tracking</h3>
+                            <p>In order to test the different methods for locating the user, I made and designed several wheeled robots, for both simplicity and safety reasons.</p>
+                            <img class="img-responsive" src="Hexacopter/21.jpg"/>
+                            <br>
+                            <img class="img-responsive" src="Hexacopter/22.jpg" />
+                            <br>
+                            <p>The first method implemented for tracking the user was simple and quite inefficient. The process involved forward motion until the signal strength began to decrease. The robot would then change direction and repeat the proccess.</p>
+                            <a href="https://youtu.be/pXg0gOTR6uc" target="_blank">A test of the above method is linked here</a>
+                            <br>
+                            <h3>Pattern Recognition</h3>
+                            <p>The method I ended up going with was based on using a camera to track a specific color pattern. This offered the benifit of being much more accurate than the other methods I had tried, though only while in direct line of sight of the pattern. To increase the accuracy of the rotation I wrote a <a href="https://en.wikipedia.org/wiki/PID_controller">PID</a> controller to ensure smooth rotation and efficient tracking.</p>
+                            <a href="https://youtu.be/fRcF1KHLXOA" target="_blank">A test of this is linked here</a>
+                            <br>
+                            <h3>The Hexacopter</h3>
+                            <p>The hexacopter went through quite a few iterations to find the best weight to sturdiness ratio and to ensure the best placement of electronics.</p>
+                            <img class="img-responsive" src="Hexacopter/11.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Hexacopter/12.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Hexacopter/13.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Hexacopter/14.jpg"/>
+                            <br>
+                            <img class="img-responsive" src="Hexacopter/15.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Hexacopter/16.jpg"/>
+                            <br/>
+                        </div>
+                        <br>
+
+
+                        <div id="llnl">
+                            <h2>Proof-of-Concept for Heterogenous GPU Computing: Lattice-Boltzmann Fluid Simulations with Image Capture Analysis for User-drawn Boundary Conditions</h2>
+                            <h4>2016</h4>
+                            <p>During an internship at Lawrence Livermore National Labratory, Shingo Lavine and I clustered together Jetson TK1 boards with the goal of running a distributed fluid simulation on image analyzed hand drawn images. To do this we installed all the required packages to run a sailfish lattice-boltzmann fluid simulation and wrote a script to take an image, identify the drawing, and convert it into a simulation code.</p>
+                            <p>This project was then presented at an on site poster symposium</p>
+                            <a href="llnl.pdf" target="_blank"><img class="img-responsive" src="llnl.jpg" /></a>
+                            <br/>
+                        </div>
+                        <br>
+
+                        <div id="seebeck">
+                            <h2>Body Heat <a href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect" target="_blank">Seebeck </a>Generator</h2>
+                            <h4>2016-ongoing</h4>
+                            <p>At the 2016 Cleantech Hackathon in Troy, NY, I and several other team members, made a wearable band that traps the majority of the body heat within the encompassed area and uses the Seebeck effect to generate small amounts of electricity, which when stored up in a large capacitor, discharges with enough current to pass through a joule thief, producing enough voltage to trickle charge a LiPo battery. We used a variety of materials to get optimal temperature differential, including copper cloth and thermal paste. </p>
+                            <p>We have been given the Presidential Green Grant from Union College to continue development on this project, focusing on the aspects of thermal retention, power amplification, and ergonomic design.</p>
+                            <br/>
+                            <img class="img-responsive" src="Vambrace/ice.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Vambrace/voltage.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Vambrace/power.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Vambrace/award.jpg"/>
+                            <br/>
+                        </div>
+                        <br>
+
+
+                        <div id="hand">
+                            <h2>3D Printed Mechanical Hand With Human Based Physiology</h2>
+                            <h4>2014-2015</h4>
+                            <p>As a final project for a computer aided design and fabrication class I designed and 3D printed a human based hand that used motorized tendons to provide semi realistic movement and a similar range of motion to a human hand.</p>
+                            <p>The largest design challenge was designing a system that allowed each section of the fingers to close simultaniously and still maintain a realistic range of motion for all the fingers. I designed a joint that allows the tendon to move freely between the two sections and angled connections to stop the sections at the ends of rotation without severe increase in friction.</p>
+                            <img class="img-responsive" src="Hand/img1.jpg"/>
+                            <br>
+                            <img class="img-responsive" src="Hand/white2.jpg"/>
+                            <br/>
+                        </div>
+                        <br>
+
+                        <div id="iot">
+                            <h2>IoT Room Automation</h2>
+                            <h4>2013-ongoing</h4>
+                            <p>Using several wireless microcontrollers I've wired up all the devices I regularily turn on and off in my room to relay switches, and replaced several light fixtures with RGB LEDs. With this system I have autmated when anything turns on or off, and added the ability to control them from anywhere with an internet connection.</p>
+                            <p>I have my lights turn on and my fan turn off when its time for me to wake up, and by pinging my phones IP adress on the local network, I am able to have them turned off when I leave the building. I have written a JavaScript app for my smartwatch to control it, as well as a website hosted on one of my servers which gives my roommate easy access to the system. Several of the functions have been connected to an Amazon Echo, which allows voice control over the room.</p>
+                            <img class="img-responsive" src="iot/iot.jpg"/>
+                            <br>
+                            <img class="img-responsive" src="iot/Particle.PNG"/>
+                        </div>
+                        <br>
+
+                        <div id="syncing">
+                            <h2>Raspberry Pi Expandable media syncing system</h2>
+                            <h4>2017</h4>
+                            <h3>Server</h3>
+                            <p>I set up a Raspberry Pi connected to my home network and an external hard drive. This has Plex Media Server built onto it, which allows the streaming of media to devices on the network. It is also set up so you can add more media from any browser</p>
+                            <h3>Local Client</h3>
+                            <p>For home use I loaded a pre built OS which allows direct streaming directly from the server on the local network. This is connected to the TV and is controllable from phones on the network.</p>
+                            <h3>Remote Client</h3>
+                            <p>I also wanted to be able to use this system away from home, and I wanted my solution to be expandable and not require administrator privileges on whatever network I was on. To do this I made another Raspberry Pi with the Raspbian image, and set up another plex server. To transfer the media I set it up to automatically connect to my home network's IP address, which had port 22 forwarded to the server, and sync the contents of a specific folder to the remote Pi. This allows a large media library stored on the server and only what will fit on the remote Pi to be played instantly, with control over what is automatically synced.</p>
+                            <br/>
+                        </div>
+                        <br>
+
+                        <div id="unlocker">
+                            <h2>Remote Door Unlocking Mechanism</h2>
+                            <h4>2016</h4>
+                            <P>Another student and I designed a prototype for a mechanical device used to wirelessly unlock your door from the other side, eliminating the need for keys. A small script to host an HTML server was put on an ESP8266, which was wired up to two large continuous rotation servos. These where mounted on a 3D printed gear mechanism which we specifically designed to provide the right amount of torque to turn the the type of handle present in our dorm rooms. This was done completely in SolidWorks and 3D printed.</p>
+                            <img class="img-responsive" src="unlocker/img1.PNG"/>
+                            <br/>
+                            <img class="img-responsive" src="unlocker/img2.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="unlocker/img3.jpg"/>
+                            <br/>
+                        </div>
+                        <br>
+
+                        <div id="current">
+                            <h2>Current Projects</h2>
+                            <h3>Research Project Based on Seebeck Generator</h3>
+                            <p>Using the funding from the Presidential Green Grant, me and my colleges are working on improving the efficiency of the <a href="#seebeck">Seebeck Device</a>, hopefully witht the outcome of a practical and easy to use device.</p>
+                            <br/>
+                            <h3>Research Project on Submersible Vehicle</h3>
+                            <p>Another student and I are resuming a project to make a submersible vehicle to locate a sunken car within a lake. As the exterior of the submarine and ballast system where designed by now graduated students, we are only able to adjust the design of the interior structure, even though it is not of the best design. We have gutted and redesigned their power distribution, control system, and method of steering from on the water.</p>
+                           <p>I designed the new control system around two raspberry pi’s connected by several hundred feet of ethernet. They connect via a python scripted socket, allowing control from a video game controller. The raspberry pi on the sub streams a live video connection to the screen of the raspberry pi with the controller. The next step is waterproof testing in our pool.</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/iPiy8iFDrdc" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <br>
+
+
+
+                        <div id="misc">
+                            <h2>Miscellaneous</h2>
+                            <h3>This website</h3>
+                            <h4>2017</h4>
+                            <p>I put this website together using boostrap to address common compatability issues, but with mostly custom CSS.</p>
+                            <br>
+                            <h3>HTML and CSS Solar System Model</h3>
+                            <h4>2013</h4>
+                            <p>A small project designed to be on the homescreen of a phone, this model of the solar system span at a one year to one second speed ratio. This was made using only HTML and CSS, using WebKit for the rotation.</p>
+                            <a href="centripetal/Computer.html" target="_blank">A copy of the model is here</a>
+                            <br/>
+                        </div>
+                        <br>
+                            <h3>3D printed phone holder to mount in my car</h3>
+                            <h4>2016</h4>
+                            <img class="img-responsive" src="Printed/holder1.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Printed/holder2.jpg"/>
+                            <br/>
+                            <img class="img-responsive" src="Printed/holder3.jpg"/>
+                            <br/>
+                            <h3>3D printed mask from photogrammetry generated model</h3>
+                            <h4>2014</h4>
+                            <img class="img-responsive" src="Printed/mask.jpg"/>
+                            <br/>
+                        </div>
+                        <br>
+
+                        <!--
+                        <div id="tmp">
+                            <h2>tmp</h2>
+                            <h3>Server</h3>
+                            <img class="img-responsive" src="tmp"/>
+                            <br/>
+                        </div>
+                        <br>
+                        -->
+
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Goes to -->
+    <script>
+    $("#seebeck").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".seebeck").offset().top},
+            'slow');
+    });
+
+
+    $("#hexacopter").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".hexacopter").offset().top},
+            'slow');
+    });
+
+
+    $("#syncing").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".syncing").offset().top},
+            'slow');
+    });
+
+
+    $("#iot").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".iot").offset().top},
+            'slow');
+    });
+
+
+    $("#hand").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".hand").offset().top},
+            'slow');
+    });
+
+
+    $("#unlocker").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".unlocker").offset().top},
+            'slow');
+    });
+
+
+        $("#solar").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".solar").offset().top},
+            'slow');
+    });
+
+        $("#watch").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".watch").offset().top},
+            'slow');
+    });
+
+    </script>
+
+</body>
+
+</html>
