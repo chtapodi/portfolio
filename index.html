@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
-
+	<!--Notes:
+	For image compression "jpegoptim --size=320k *.jpg"
+	Not the best quality, but also not the best site hosting
+	-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
   <meta name="Engineering Portfolio" content="">
   <meta name="Xavier Quinn" content="">
 
-  <title>Xavier</title>
+  <title>Xavier Portfolio</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,60 +29,70 @@
   <!-- Custom styles for this template -->
   <link href="css/creative.css" rel="stylesheet">
 
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body id="page-top">
 
   <div id="wrapper">
     <div class="video-container bg-primary">
-      <video preload="true" autoplay="autoplay" loop="true" id="vid" muted>
-        <source src="img/header.mp4" type="video/mp4" >
-      </video>
-      <script>
-        document.getElementById('vid').play();
-      </script>
+	 <video preload="true" autoplay="autoplay" loop="true" id="vid" muted>
+	   <source src="img/header.mp4" type="video/mp4" >
+	 </video>
+	 <script>
+	   document.getElementById('vid').play();
+	 </script>
     </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Xavier Quinn</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#large">Large Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#small">Smaller Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#misc">Miscellaneous</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+	 <div class="container">
+	   <a class="navbar-brand js-scroll-trigger" href="#page-top">Xavier Quinn</a>
+	   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	   <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+		    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link js-scroll-trigger" href="#large">Large Projects</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link js-scroll-trigger" href="#small">Smaller Projects</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link js-scroll-trigger" href="#misc">Miscellaneous</a>
+		  </li>
+		</ul>
+	   </div>
+	 </div>
     </nav>
 
 
     <header class="masthead text-center text-primary d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-                <strong>Engineering Portfolio</strong>
-              </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About</a>
-          </div>
-        </div>
-      </div>
+	 <div class="container my-auto">
+	   <div class="row">
+		<div class="col-lg-10 mx-auto">
+		  <h1 class="text-uppercase">
+			 <strong>Engineering Portfolio</strong>
+		    </h1>
+		  <hr>
+		</div>
+		<div class="col-lg-8 mx-auto">
+		  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About</a>
+		</div>
+	   </div>
+	 </div>
     </header>
 
     <!-- Page Content -->
@@ -87,40 +100,43 @@
 
 
     <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">About</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">I am currently studying Computer Engineering in upstate New York at Union College. Outside of engineering, I spend my free time cooking, fermenting hot sauce, drawing and reading. My main project interests tend to involve various forms of
-              automation, quadcopters, or other remotely operated devices.</p>
-            <hr class="light my-4">
-          </div>
-        </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h2 class="section-heading ">About</h2>
+		  <hr class="my-4">
+		  <p class="mb-4">I am currently studying Computer Engineering in upstate New York at Union College. Outside of engineering, I spend my free time cooking, fermenting hot sauce, drawing and reading. My main project interests tend to involve various forms of
+		    automation, quadcopters, or other remotely operated devices.</p>
+		  <hr class="light my-4">
+		</div>
+	   </div>
 
-        <div class="row no-gutters">
+	   <div class="row no-gutters text-center">
 
-          <div class="service-box mt-5 mx-auto">
-            <a href="https://www.linkedin.com/in/xavier-theo-quinn/" target="_blank">
-              <h3>Linkedin</h3>
-            </a>
-          </div>
-          <div class="service-box mt-5 mx-auto">
-            <a href="https://docs.google.com/document/d/134-KVrusBlhO0NPJBxCuiSWPaR7QW1cQKLCtOT5Uek8/edit?usp=sharing" target="_blank">
-              <h3>Resume</h3>
-            </a>
-          </div>
-          <div class="service-box mt-5 mx-auto">
-            <a href="https://github.com/chtapodi" target="_blank">
-              <h3>Github</h3>
-            </a>
-          </div>
+		<div class="service-box mt-5 mx-auto">
+		  <i class="fa fa-linkedin light fa-2x sr-contact"></i>
+		  <a href="https://www.linkedin.com/in/xavier-theo-quinn/" target="_blank">
+		    <h3>Linkedin</h3>
+		  </a>
+		</div>
+		<div class="service-box mt-5 mx-auto">
+		  <i class="fa fa-file-text-o light fa-2x sr-contact"></i>
+		  <a href="https://docs.google.com/document/d/134-KVrusBlhO0NPJBxCuiSWPaR7QW1cQKLCtOT5Uek8/edit?usp=sharing" target="_blank">
+		    <h3>Resume</h3>
+		  </a>
+		</div>
+		<div class="service-box mt-5 mx-auto">
+		  <i class="fa fa-github light fa-2x sr-contact"></i>
+		  <a href="https://github.com/chtapodi" target="_blank">
+		    <h3>Github</h3>
+		  </a>
+		</div>
 
 
 
 
-        </div>
-      </div>
+	   </div>
+	 </div>
 
 
 
@@ -131,738 +147,783 @@
 
 
     <section id="large">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Large Projects</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#hexacopter">
-                <h3>Modular Aquaponics</h3>
-              </a>
-              <p class="text-muted mb-0">A research project based upon creating an open source automated and modular food growth platform</p>
-            </div>
-          </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-12 text-center">
+		  <h2 class="section-heading">Large Projects</h2>
+		  <hr class="my-4">
+		</div>
+	   </div>
+	 </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#ponics">
+			 <h3>Modular Aquaponics</h3>
+		    </a>
+		    <p class="text-muted mb-0">A research project based upon creating an open source automated and modular food growth platform</p>
+		  </div>
+		</div>
 
 
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#hexacopter">
-                <h3>Semi-Autonomous Hexacopter</h3>
-              </a>
-              <p class="text-muted mb-0">A project with the goal of making a user following multicopter</p>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#hexacopter">
+			 <h3>Semi-Autonomous Hexacopter</h3>
+		    </a>
+		    <p class="text-muted mb-0">A project with the goal of making a user following multicopter</p>
 
-            </div>
-          </div>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#nems">
-                <h3>NEM-pi</h3>
-              </a>
-              <p class="text-muted mb-0">Porting a network mapping system (NeMS) onto new portable hardware</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#nems">
+			 <h3>NEM-pi</h3>
+		    </a>
+		    <p class="text-muted mb-0">Porting a network mapping system (NeMS) onto new portable hardware</p>
+		  </div>
+		</div>
 
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#submarine">
-                <h3>Submersible</h3>
-              </a>
-              <p class="text-muted mb-0">A research project with the goal of building a machine to retrieve a car from the bottom of a lake</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#submarine">
+			 <h3>Submersible</h3>
+		    </a>
+		    <p class="text-muted mb-0">A research project with the goal of building a machine to retrieve a car from the bottom of a lake</p>
+		  </div>
+		</div>
 
-        </div>
-      </div>
+	   </div>
+	 </div>
     </section>
 
 
     <!--
     <section id="null">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Semi-Autonomous Hexacopter</h1>
-            <h4>2015-2016</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>This project's objective was to make a small, airborne, fully autonimous drone that followed a user. Possible applications include lighting, video recording, navigation assistance, etc.</p>
-          </div>
-        </div>
-      </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Semi-Autonomous Hexacopter</h1>
+		  <h4>2015-2016</h4>
+		  <hr class="my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>This project's objective was to make a small, airborne, fully autonimous drone that followed a user. Possible applications include lighting, video recording, navigation assistance, etc.</p>
+		</div>
+	   </div>
+	 </div>
     </section>
 
  -->
 
     <section id="hexacopter" class="bg-primary">
-      <div class="container bg-primary">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Semi-Autonomous Hexacopter</h1>
-            <h4>2015-2016</h4>
-            <hr class="light my-4">
+	 <div class="container bg-primary">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Semi-Autonomous Hexacopter</h1>
+		  <h4>2015-2016</h4>
+		  <hr class="light my-4">
 
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>This project's objective was to make a small, airborne, fully autonimous drone that followed a user. Possible applications include lighting, video recording, navigation assistance, etc.</p>
-            <p>Two main problems were addressed in the design and construction of this project. The first was to create a multicopter with enough lift to carry any equipment required, and the second was to design a method for locating and following the user.</p>
-            <p>To address the issue of lift, I created a custom hexacopter, controlled by an Arduino Nano. The Nano sent signals that imitated those from a receiver. By using a prebuilt flight control system, I was able to use pre-built precisely tuned sensors
-              and flight controllers. This allowed me to focus on other components of the project, such as the tracking algorithm and hexcopter logistics.</p>
-            <p>After several iterations of the hexcopter's tracking methods, I settled on a system which utilized a camera to track the location of color patterns.</p>
-            <p>Below are several videos displaying the final design in flight. Due to safety concerns, only the rotation was autonimous. However, the other degrees of motion were all tested individually and had worked as well.</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/lwPd3lndL5c" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <hr class="my-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/8aUR0Q3wsgI" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <br>
-            <h3 class="section-heading">Details of the entire process are provided below</h3>
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <hr class="my-4">
-            <h4>RSSI Trilateration</h4>
-            <p>My first method for tracking was based on using the <a href="https://en.wikipedia.org/wiki/Received_signal_strength_indication" target="_blank">RSSI signal</a> from my phones hotspot.</p>
-            <p>To do this I used an electric imp based wireless board, and developed several methods of honing in on the phones signal. The largest issue I came across for this method was due to signal strength being logarithmic, so the values became indiscernible
-              once any real distance away from my phone.</p>
-            <p>The method I came up with involved moving in a direction until the strength changed, noting how far that was, and then turning and repeating that proccess. This gave three points along with the signal strength at each of them, which allowed
-              the calculation of what angle my phones hotspot was at in relation to it. It would then travel in this direction until the signal strength began to decrease, when it would repeat the proccess again.</p>
-            <p>Unfortunately the changes in signal strength where so slight that this method would only work over a very large area, so I had to find a better method.</p>
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>This project's objective was to make a small, airborne, fully autonimous drone that followed a user. Possible applications include lighting, video recording, navigation assistance, etc.</p>
+		  <p>Two main problems were addressed in the design and construction of this project. The first was to create a multicopter with enough lift to carry any equipment required, and the second was to design a method for locating and following the user.</p>
+		  <p>To address the issue of lift, I created a custom hexacopter, controlled by an Arduino Nano. The Nano sent signals that imitated those from a receiver. By using a prebuilt flight control system, I was able to use pre-built precisely tuned sensors
+		    and flight controllers. This allowed me to focus on other components of the project, such as the tracking algorithm and hexcopter logistics.</p>
+		  <p>After several iterations of the hexcopter's tracking methods, I settled on a system which utilized a camera to track the location of color patterns.</p>
+		  <p>Below are several videos displaying the final design in flight. Due to safety concerns, only the rotation was autonimous. However, the other degrees of motion were all tested individually and had worked as well.</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/lwPd3lndL5c" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		  <hr class="my-4">
+		  <div class="embed-responsive embed-responsive-16by9">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/8aUR0Q3wsgI" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		</div>
+		<div class="col-lg-8 mx-auto text-center">
+		  <br>
+		  <h3 class="section-heading">Details of the entire process are provided below</h3>
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <hr class="my-4">
+		  <h4>RSSI Trilateration</h4>
+		  <p>My first method for tracking was based on using the <a href="https://en.wikipedia.org/wiki/Received_signal_strength_indication" target="_blank">RSSI signal</a> from my phones hotspot.</p>
+		  <p>To do this I used an electric imp based wireless board, and developed several methods of honing in on the phones signal. The largest issue I came across for this method was due to signal strength being logarithmic, so the values became indiscernible
+		    once any real distance away from my phone.</p>
+		  <p>The method I came up with involved moving in a direction until the strength changed, noting how far that was, and then turning and repeating that proccess. This gave three points along with the signal strength at each of them, which allowed
+		    the calculation of what angle my phones hotspot was at in relation to it. It would then travel in this direction until the signal strength began to decrease, when it would repeat the proccess again.</p>
+		  <p>Unfortunately the changes in signal strength where so slight that this method would only work over a very large area, so I had to find a better method.</p>
 
-            <hr class="my-4">
-            <h4>Signal Tracking</h4>
-            <p>In order to test the different methods for locating the user, I made and designed several wheeled robots, for both simplicity and safety reasons.</p>
+		  <hr class="my-4">
+		  <h4>Signal Tracking</h4>
+		  <p>In order to test the different methods for locating the user, I made and designed several wheeled robots, for both simplicity and safety reasons.</p>
 
-            <div class="service-box mt-5 mx-auto">
-
-
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                    <img class="img-fluid" src="img/large/hexacopter/1_tn.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                      <div class="portfolio-box-caption-content">
-                        <div class="project-category text-faded">
-                        Hexacopter build gallery
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/large/hexacopter/1.jpg" title="Rotational platform"></a>
-                    <a class="portfolio-box" href="img/large/hexacopter/2.jpg" title="Omnidirectional platform"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p>The first method implemented for tracking the user was simple and quite inefficient. The process involved forward motion until the signal strength began to decrease. The robot would then change direction and repeat the proccess.</p>
-            <p>A test of the above method is linked here</p>
-
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/pXg0gOTR6uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+		  <div class="service-box mt-5 mx-auto">
 
 
-            <hr class="my-4">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				<img class="img-fluid" src="img/large/hexacopter/1_tn.jpg" alt="">
+				<div class="portfolio-box-caption">
+				  <div class="portfolio-box-caption-content">
+				    <div class="project-category text-faded">
+				    Hexacopter build gallery
+				    </div>
+				  </div>
+				</div>
+			   </a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/large/hexacopter/1.jpg" title="Rotational platform"></a>
+				<a class="portfolio-box" href="img/large/hexacopter/2.jpg" title="Omnidirectional platform"></a>
+			   </div>
+			 </div>
+		    </div>
+		  </div>
+		  <p>The first method implemented for tracking the user was simple and quite inefficient. The process involved forward motion until the signal strength began to decrease. The robot would then change direction and repeat the proccess.</p>
+		  <p>A test of the above method is linked here</p>
 
-            <h4>Pattern Recognition</h4>
-            <p>The method I ended up going with was based on using a camera to track a specific color pattern. This offered the benifit of being much more accurate than the other methods I had tried, though only while in direct line of sight of the pattern.
-              To increase the accuracy of the rotation I wrote a <a href="https://en.wikipedia.org/wiki/PID_controller" target="_blank">PID</a> controller to ensure smooth rotation and efficient tracking.</p>
-            <p>A test of this is linked here</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/fRcF1KHLXOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-
-            <hr class="my-4">
-
-            <h4>The Hexacopter</h4>
-            <p>The hexacopter went through quite a few iterations to find the best weight to sturdiness ratio and to ensure the best placement of electronics.</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/pXg0gOTR6uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
 
 
-          </div>
-        </div>
-      </div>
+		  <hr class="my-4">
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/large/hexacopter/12_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Hexacopter build gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/large/hexacopter/3.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/4.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/5.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/6.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/7.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/8.jpg"></a>
-            <a class="portfolio-box" href="img/large/hexacopter/9.jpg" title=""></a>
-            <a class="portfolio-box" href="img/large/hexacopter/10.jpg" title=""></a>
-            <a class="portfolio-box" href="img/large/hexacopter/11.jpg" title=""></a>
-            <a class="portfolio-box" href="img/large/hexacopter/12.jpg" title=""></a>
-            <a class="portfolio-box" href="img/large/hexacopter/13.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+		  <h4>Pattern Recognition</h4>
+		  <p>The method I ended up going with was based on using a camera to track a specific color pattern. This offered the benifit of being much more accurate than the other methods I had tried, though only while in direct line of sight of the pattern.
+		    To increase the accuracy of the rotation I wrote a <a href="https://en.wikipedia.org/wiki/PID_controller" target="_blank">PID</a> controller to ensure smooth rotation and efficient tracking.</p>
+		  <p>A test of this is linked here</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/fRcF1KHLXOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
+
+		  <hr class="my-4">
+
+		  <h4>The Hexacopter</h4>
+		  <p>The hexacopter went through quite a few iterations to find the best weight to sturdiness ratio and to ensure the best placement of electronics.</p>
+
+
+		</div>
+	   </div>
+	 </div>
+
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/large/hexacopter/12_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Hexacopter build gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/large/hexacopter/3.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/4.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/5.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/6.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/7.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/8.jpg"></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/9.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/10.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/11.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/12.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/hexacopter/13.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
     </section>
 
     <section id="nems">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">NEM-pi</h1>
-            <h4>2017</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>During a summer internship at Lawrence Livermore National Labratory I ported a network mapping system to a raspberry pi. This, at the cost of compute power, drastically increased the portability, allowing the system to be carried in a pocket.</p>
-            <p>I also designed and wrote a system of automation scripts to automatically run the required services and collect the data in an easy format for removal from the device.</p>
-            <p>Due to this, the whole system can now be plugged in and left until the desired data is collected, and then the data can easily be moved to a more powerful computer for analysis.</p>
-            <p>This project was presented at a formal symposium, and the presentation used is shown below.</p>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">NEM-pi</h1>
+		  <h4>2017</h4>
+		  <hr class="my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>During a summer internship at Lawrence Livermore National Labratory I ported a network mapping system to a raspberry pi. This, at the cost of compute power, drastically increased the portability, allowing the system to be carried in a pocket.</p>
+		  <p>I also designed and wrote a system of automation scripts to automatically run the required services and collect the data in an easy format for removal from the device.</p>
+		  <p>Due to this, the whole system can now be plugged in and left until the desired data is collected, and then the data can easily be moved to a more powerful computer for analysis.</p>
+		  <p>This project was presented at a formal symposium, and the presentation used is shown below.</p>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class="gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/large/nems/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Presentation
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/large/nems/1.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class="gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/large/nems/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				  Presentation
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/large/nems/1.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
     </section>
 
-    <section id="ponics">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">A research project based upon creating an open source automated and modular food growth platform</h1>
-            <h4>2017-present</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>When I first found out about what hydroponics is, I was immediatly fascinated by the concept. While I was doing research on the different methods of construction, I began to think of different ways the proccess could be automated.</p>
-            <p>I decided that this is would be a good project to do through the school, so several other interested students and I formed a preposal for an aquaponics research project on campus. This preposal can be viewed <a href="https://docs.google.com/document/d/1kG3G_ANmYH2M6R8FW054WJIVxTd4ejG5dhmXzPSEPa8/edit?usp=sharing"
-                target="_blank">here</a>.</p>
-            <p>Unfortunately this preposal got denied as it was too costly, so I reworked the preposal into a modular system to fit various budgets, as well as some updated methods, which got approved, and can be viewed <a href="https://docs.google.com/document/d/1EbEn-iob9ZzoPDQIt15XcPnm0FXwO5eUa_0MS9Y8kv8/edit?usp=sharing"
-                target="_blank">here</a>. At the momment the materials are arriving slowly, and in the meantime we are experimenting with small scale hydroponics, as can be seen in the gallery below.</p>
+    <section id="ponics" class="bg-primary">
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Modular Aquaponics</h1>
+		  <h3>A research project based upon creating an open source automated, modular food growth platform and testbed for research.</h3>
+		  <h4>2017-present</h4>
+		  <hr class="my-4 light">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>When I first found out about what hydroponics is, I was immediatly fascinated by the concept. While I was doing research on the different methods of construction, I began to think of different ways the proccess could be automated.</p>
+		  <p>I decided that this is would be a good project to do through the school, so several other interested students and I formed a preposal for an aquaponics research project on campus. This preposal can be viewed <a href="https://docs.google.com/document/d/1kG3G_ANmYH2M6R8FW054WJIVxTd4ejG5dhmXzPSEPa8/edit?usp=sharing"
+			 target="_blank">here</a>.</p>
+		  <p>Unfortunately this preposal got denied as it was too costly, so I reworked the preposal into a modular system to fit various budgets, as well as some updated methods, which got approved, and can be viewed <a href="https://docs.google.com/document/d/1EbEn-iob9ZzoPDQIt15XcPnm0FXwO5eUa_0MS9Y8kv8/edit?usp=sharing"
+		  target="_blank">here</a>. During my sophomore year, only the tank had arrived, and while it is being proccessed for aquaponics use, we had several small scale hydroponics systems using both the DWC and Kratky methods, as can be seen in the gallery. Systems for automated fish feeding and maintenance were being designed as well.</p>
+		  <p>Upon my return to Union at the begining of 2019, continuation of the project was initiated. The water for the tank was prepared and fish were chosen to get the inital bacterial cycle going. To filter the water, plants needed to immediatly be introducted to the system, even though the system was not ready for automation aspects. Lettuce and tomato plants were chosen for no particular reason besides their availability, but future crops will be selected more carefully. At the moment there are several issues with the timing of the water cycle, which is prohibiting proper aeration of the plants roots, but this will be fixed with an improved pump system. </p>
+		  <p>A prototype of an automatic fish feeder was designed and 3D printed to ensure the survival of the fish over the summer, but the goal is to eventually replace this with a black soldier fly larvae hatchery. This progress can be seen in the photo gallery below.</p>
 
 
-          </div>
-        </div>
-      </div>
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class="gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/large/ponics/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/large/ponics/1.jpg" title="Arugula and basil"></a>
-            <a class="portfolio-box" href="img/large/ponics/2.jpg" title="Kratky method with radishes"></a>
-            <a class="portfolio-box" href="img/large/ponics/3.jpg" title=""></a>
-            <a class="portfolio-box" href="img/large/ponics/4.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
+
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class="gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/large/ponics/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				  Gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/large/ponics/1.jpg" title="Arugula and basil"></a>
+		  <a class="portfolio-box" href="img/large/ponics/2.jpg" title="Kratky method with radishes"></a>
+		  <a class="portfolio-box" href="img/large/ponics/3.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/ponics/4.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/large/ponics/5.jpg" title="The unprepared fish tank"></a>
+		  <a class="portfolio-box" href="img/large/ponics/6.jpg" title="Cutting it up"></a>
+		  <a class="portfolio-box" href="img/large/ponics/7.jpg" title="Initial assembly"></a>
+		  <a class="portfolio-box" href="img/large/ponics/8.jpg" title="Introduction of fish"></a>
+		  <a class="portfolio-box" href="img/large/ponics/9.jpg" title="Addition of grow medium"></a>
+		  <a class="portfolio-box" href="img/large/ponics/10.jpg" title="3D printed automatic fish feeder prototype"></a>
+		  <a class="portfolio-box" href="img/large/ponics/11.jpg" title="Introduction of temporary filtering crops"></a>
+		  <a class="portfolio-box" href="img/large/ponics/12.jpg" title="Filter crops with growlight"></a>
+		  <a class="portfolio-box" href="img/large/ponics/13.jpg" title="Growth progress"></a>
+		</div>
+	   </div>
+	 </div>
+
+
     </section>
 
 
     <section id="submarine">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Research Project on Submersible Vehicle</h1>
-            <h4>2017-present</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>Another student and I are resuming a project to make a submersible vehicle to locate a sunken car within a lake. As the exterior of the submarine and ballast system where designed by now graduated students, we are only able to adjust the design
-              of the interior structure, even though it is not of the best design. We have gutted and redesigned their power distribution, control system, and method of steering from on the water.</p>
-            <p>I designed the new control system around two raspberry pi’s connected by several hundred feet of ethernet. They connect via a python scripted socket, allowing control from a video game controller. The raspberry pi on the sub streams a live
-              video connection to the screen of the raspberry pi with the controller. The next step is waterproof testing in our pool.</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iPiy8iFDrdc" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <hr>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Research Project on Submersible Vehicle</h1>
+		  <h4>2017-present</h4>
+		  <hr class="my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>Another student and I are resuming a project to make a submersible vehicle to locate a sunken car within a lake. As the exterior of the submarine and ballast system where designed by now graduated students, we are only able to adjust the design
+		    of the interior structure, even though it is not of the best design. We have gutted and redesigned their power distribution, control system, and method of steering from on the water.</p>
+		  <p>I designed the new control system around two raspberry pi’s connected by several hundred feet of ethernet. They connect via a python scripted socket, allowing control from a video game controller. The raspberry pi on the sub streams a live
+		    video connection to the screen of the raspberry pi with the controller. The next step is waterproof testing in our pool.</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/iPiy8iFDrdc" frameborder="0" allowfullscreen></iframe>
+		  </div>
+		  <hr>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/large/sub/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Submarine gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/large/sub/1.jpg" title="The sub as we got it"></a>
-            <a class="portfolio-box" href="img/large/sub/12.jpg" title="The wiring I had to replace"></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/large/sub/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Submarine gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/large/sub/1.jpg" title="The sub as we got it"></a>
+		  <a class="portfolio-box" href="img/large/sub/2.jpg" title="The wiring I had to replace"></a>
+		  <a class="portfolio-box" href="img/large/sub/3.jpg" title="Testing new ballast control system "></a>
+		  <a class="portfolio-box" href="img/large/sub/4.jpg" title="All relays mounted"></a>
+		  <a class="portfolio-box" href="img/large/sub/5.jpg" title="Back of the board"></a>
+		  <a class="portfolio-box" href="img/large/sub/6.jpg" title="Everything connected"></a>
+		  <a class="portfolio-box" href="img/large/sub/7.jpg" title="Everything connected"></a>
+		  <a class="portfolio-box" href="img/large/sub/8.jpg" title="Installed in the hull"></a>
+		</div>
+	   </div>
+	 </div>
 
     </section>
 
 
     <section id="small" class="bg-primary">
-      <div class="container ">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Smaller Projects</h2>
-            <hr class="light my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
+	 <div class="container ">
+	   <div class="row">
+		<div class="col-lg-12 text-center">
+		  <h2 class="section-heading">Smaller Projects</h2>
+		  <hr class="light my-4">
+		</div>
+	   </div>
+	 </div>
+	 <div class="container">
+	   <div class="row">
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#seebeck">
-                <h3>Body heat Seebeck generator</h3>
-              </a>
-              <p class="mb-0">Harvesting electricity from body heat</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#seebeck">
+			 <h3>Body heat Seebeck generator</h3>
+		    </a>
+		    <p class="mb-0">Harvesting electricity from body heat</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#unlocker">
-                <h3>Remote Door Unlocking Mechanism</h3>
-              </a>
-              <p class=" mb-0">A project for a class</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#unlocker">
+			 <h3>Remote Door Unlocking Mechanism</h3>
+		    </a>
+		    <p class=" mb-0">A project for a class</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#hand">
-                <h3>3D Printed Mechanical Hand</h3>
-              </a>
-              <p class="mb-0">Designed based on human Physiology</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#hand">
+			 <h3>3D Printed Mechanical Hand</h3>
+		    </a>
+		    <p class="mb-0">Designed based on human Physiology</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="js-scroll-trigger" href="#fluidsim">
-                <h3>Proof-of-Concept for Heterogenous GPU Computing</h3>
-              </a>
-              <p class="mb-0">Lattice-Boltzmann Fluid Simulations with Image Capture Analysis for User-drawn Boundary Conditions</p>
-            </div>
-          </div>
-
-
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <a class="js-scroll-trigger" href="#fluidsim">
+			 <h3>Proof-of-Concept for Heterogenous GPU Computing</h3>
+		    </a>
+		    <p class="mb-0">Lattice-Boltzmann Fluid Simulations with Image Capture Analysis for User-drawn Boundary Conditions</p>
+		  </div>
+		</div>
 
 
 
-        </div>
-      </div>
+
+
+	   </div>
+	 </div>
     </section>
 
     <section id="seebeck">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Body Heat <a href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect" target="_blank">Seebeck </a>Generator</h1>
-            <h4>2016-2017</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>At the 2016 Cleantech Hackathon in Troy, NY, I and several other team members, made a wearable band that traps the majority of the body heat within the encompassed area and uses the Seebeck effect to generate small amounts of electricity,
-              which when stored up in a large capacitor, discharges with enough current to pass through a joule thief, producing enough voltage to trickle charge a LiPo battery. We used a variety of materials to get optimal temperature differential, including
-              copper cloth and thermal paste. </p>
-            <p>We had been given the Presidential Green Grant from Union College to continue development on this project, focusing on the aspects of thermal retention, power amplification, and ergonomic design, but after extensive testing we proved that
-              with current technology this system is simply too inefficient.</p>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Body Heat <a href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect" target="_blank">Seebeck </a>Generator</h1>
+		  <h4>2016-2017</h4>
+		  <hr class="my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>At the 2016 Cleantech Hackathon in Troy, NY, I and several other team members, made a wearable band that traps the majority of the body heat within the encompassed area and uses the Seebeck effect to generate small amounts of electricity,
+		    which when stored up in a large capacitor, discharges with enough current to pass through a joule thief, producing enough voltage to trickle charge a LiPo battery. We used a variety of materials to get optimal temperature differential, including
+		    copper cloth and thermal paste. </p>
+		  <p>We had been given the Presidential Green Grant from Union College to continue development on this project, focusing on the aspects of thermal retention, power amplification, and ergonomic design, but after extensive testing we proved that
+		    with current technology this system is simply too inefficient.</p>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/small/seebeck/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Project Gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/small/seebeck/1.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/seebeck/2.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/seebeck/3.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/seebeck/4.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/small/seebeck/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Project Gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/small/seebeck/1.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/seebeck/2.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/seebeck/3.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/seebeck/4.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
     </section>
 
 
 
     <section id="unlocker" class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Remote Door Unlocking Mechanism</h1>
-            <h4>2016</h4>
-            <hr class="light my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>Another student and I designed a prototype for a mechanical device used to wirelessly unlock your door from the other side, eliminating the need for keys. A small script to host an HTML server was put on an ESP8266, which was wired up to two
-              large continuous rotation servos. These where mounted on a 3D printed gear mechanism which we specifically designed to provide the right amount of torque to turn the the type of handle present in our dorm rooms. This was done completely
-              in SolidWorks and 3D printed.</p>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Remote Door Unlocking Mechanism</h1>
+		  <h4>2016</h4>
+		  <hr class="light my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>Another student and I designed a prototype for a mechanical device used to wirelessly unlock your door from the other side, eliminating the need for keys. A small script to host an HTML server was put on an ESP8266, which was wired up to two
+		    large continuous rotation servos. These where mounted on a 3D printed gear mechanism which we specifically designed to provide the right amount of torque to turn the the type of handle present in our dorm rooms. This was done completely
+		    in SolidWorks and 3D printed.</p>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/small/unlocker/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Project Gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/small/unlocker/1.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/unlocker/2.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/unlocker/3.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/small/unlocker/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Project Gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/small/unlocker/1.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/unlocker/2.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/unlocker/3.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
     </section>
 
 
 
     <section id="hand">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">3D Printed Mechanical Hand With Human Based Physiology</h1>
-            <h4>2014-2015</h4>
-            <hr class="my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>As a final project for a computer aided design and fabrication class I designed and 3D printed a human based hand that used motorized tendons to provide semi realistic movement and a similar range of motion to a human hand.</p>
-            <p>The largest design challenge was designing a system that allowed each section of the fingers to close simultaniously and still maintain a realistic range of motion for all the fingers. I designed a joint that allows the tendon to move freely
-              between the two sections and angled connections to stop the sections at the ends of rotation without severe increase in friction.</p>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">3D Printed Mechanical Hand With Human Based Physiology</h1>
+		  <h4>2014-2015</h4>
+		  <hr class="my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>As a final project for a computer aided design and fabrication class I designed and 3D printed a human based hand that used motorized tendons to provide semi realistic movement and a similar range of motion to a human hand.</p>
+		  <p>The largest design challenge was designing a system that allowed each section of the fingers to close simultaniously and still maintain a realistic range of motion for all the fingers. I designed a joint that allows the tendon to move freely
+		    between the two sections and angled connections to stop the sections at the ends of rotation without severe increase in friction.</p>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/small/hand/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Project Gallery
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/small/hand/1.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/hand/2.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/hand/3.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/hand/4.jpg" title=""></a>
-            <a class="portfolio-box" href="img/small/hand/5.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/small/hand/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Project Gallery
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/small/hand/1.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/hand/2.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/hand/3.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/hand/4.jpg" title=""></a>
+		  <a class="portfolio-box" href="img/small/hand/5.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
 
     </section>
 
     <section id="fluidsim" class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="section-heading">Proof-of-Concept for Heterogenous GPU Computing: Lattice-Boltzmann Fluid Simulations with Image Capture Analysis for User-drawn Boundary Conditions</h1>
-            <h4>2016</h4>
-            <hr class="light my-4">
-          </div>
-          <div class="col-lg-8 mx-auto text-left">
-            <p>During an internship at Lawrence Livermore National Labratory, Shingo Lavine and I clustered together Jetson TK1 boards with the goal of running a distributed fluid simulation on image analyzed hand drawn images. To do this we installed all
-              the required packages to run a sailfish lattice-boltzmann fluid simulation and wrote a script to take an image, identify the drawing, and convert it into a simulation code.</p>
-            <p>This project was then presented at an on site poster symposium</p>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <h1 class="section-heading">Proof-of-Concept for Heterogenous GPU Computing: Lattice-Boltzmann Fluid Simulations with Image Capture Analysis for User-drawn Boundary Conditions</h1>
+		  <h4>2016</h4>
+		  <hr class="light my-4">
+		</div>
+		<div class="col-lg-8 mx-auto text-left">
+		  <p>During an internship at Lawrence Livermore National Labratory, Shingo Lavine and I clustered together Jetson TK1 boards with the goal of running a distributed fluid simulation on image analyzed hand drawn images. To do this we installed all
+		    the required packages to run a sailfish lattice-boltzmann fluid simulation and wrote a script to take an image, identify the drawing, and convert it into a simulation code.</p>
+		  <p>This project was then presented at an on site poster symposium</p>
 
-          </div>
-        </div>
-      </div>
+		</div>
+	   </div>
+	 </div>
 
-      <div class="service-box mt-5 mx-auto">
-        <div class="container-fluid p-0">
-          <div class=" gallery-link">
-            <a class="portfolio-box" href="#">
-                <img class="img-fluid" src="img/small/fluidsim/1_tn.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                    Presentation
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
-          <div class="gallery">
-            <a class="portfolio-box" href="img/small/fluidsim/1.jpg" title=""></a>
-          </div>
-        </div>
-      </div>
+	 <div class="service-box mt-5 mx-auto">
+	   <div class="container-fluid p-0">
+		<div class=" gallery-link">
+		  <a class="portfolio-box" href="#">
+			 <img class="img-fluid" src="img/small/fluidsim/1_tn.jpg" alt="">
+			 <div class="portfolio-box-caption">
+			   <div class="portfolio-box-caption-content">
+				<div class="project-category text-faded">
+				Presentation
+				</div>
+			   </div>
+			 </div>
+		    </a>
+		</div>
+		<div class="gallery">
+		  <a class="portfolio-box" href="img/small/fluidsim/1.jpg" title=""></a>
+		</div>
+	   </div>
+	 </div>
     </section>
 
     <section id="misc">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Miscellaneous</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-12 text-center">
+		  <h2 class="section-heading">Miscellaneous</h2>
+		  <hr class="my-4">
+		</div>
+	   </div>
+	 </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/rc/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                          RC projects gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/misc/rc/1.jpg" title="My first quadcopter build"></a>
-                    <a class="portfolio-box" href="img/misc/rc/2.jpg" title="My most recent quadcopter"></a>
-                    <a class="portfolio-box" href="img/misc/rc/3.jpg" title="A flying wing build"></a>
-                    <a class="portfolio-box" href="img/misc/rc/4.jpg" title=""></a>
-                    <a class="portfolio-box" href="img/misc/rc/5.jpg" title="A quickly build RC sled"></a>
-                    <a class="portfolio-box" href="img/misc/rc/6.jpg" title=""></a>
-                    <a class="portfolio-box" href="img/misc/rc/7.jpg" title="A quick voltage regulator fix on my mini quad"></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">I enjoy designing and building remote controlled vehicles, as do many of my friends. Here are some of the ones I have made by myself or in conjunction with others.</p>
-            </div>
-          </div>
+	 <div class="container">
+	   <div class="row">
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/rc/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					 RC projects gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/misc/rc/1.jpg" title="My first quadcopter build"></a>
+				<a class="portfolio-box" href="img/misc/rc/2.jpg" title="My most recent quadcopter"></a>
+				<a class="portfolio-box" href="img/misc/rc/3.jpg" title="A flying wing build"></a>
+				<a class="portfolio-box" href="img/misc/rc/4.jpg" title=""></a>
+				<a class="portfolio-box" href="img/misc/rc/5.jpg" title="A quickly build RC sled"></a>
+				<a class="portfolio-box" href="img/misc/rc/6.jpg" title=""></a>
+				<a class="portfolio-box" href="img/misc/rc/7.jpg" title="A quick voltage regulator fix on my mini quad"></a>
+				<a class="portfolio-box" href="img/misc/rc/8.jpg" title=""></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">I enjoy designing and building remote controlled vehicles, as do many of my friends. Here are some of the ones I have made by myself or in conjunction with others.</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/keyboard/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                          Keyboard build gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/misc/keyboard/1.jpg" title=""></a>
-                    <a class="portfolio-box" href="img/misc/keyboard/2.jpg" title=""></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">In 2014 I decided to build a mechanical keyboard to practice my soldering. I designed the case in SolidWorks and cut it using a shopbot.</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/keyboard/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					 Keyboard build gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/misc/keyboard/1.jpg" title=""></a>
+				<a class="portfolio-box" href="img/misc/keyboard/2.jpg" title=""></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">In 2014 I decided to build a mechanical keyboard to practice my soldering. I designed the case in SolidWorks and cut it using a shopbot.</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/miner/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                          Miner gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/misc/miner/1.jpg" title="A temporary assembly for testing"></a>
-                    <a class="portfolio-box" href="img/misc/miner/2.jpg" title=""></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">I have designed, based upon GPU price, computer power, power usage and availability, and build several cryptocurrency miners.</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/miner/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					 Miner gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/misc/miner/1.jpg" title="A temporary assembly for testing"></a>
+				<a class="portfolio-box" href="img/misc/miner/2.jpg" title=""></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">I have designed, based upon GPU price, computer power, power usage and availability, and build several cryptocurrency miners.</p>
+		  </div>
+		</div>
 
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/portal/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                          Device gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box rotright90" href="img/misc/portal/1.jpg" title="Contents"></a>
-                    <a class="portfolio-box" href="img/misc/portal/2.jpg" title="In use"></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">A thrown together halloween prop using parts I had lying around.</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/portal/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					 Device gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box rotright90" href="img/misc/portal/1.jpg" title="Contents"></a>
+				<a class="portfolio-box" href="img/misc/portal/2.jpg" title="In use"></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">A thrown together halloween prop using parts I had lying around.</p>
+		  </div>
+		</div>
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/printed/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                            Gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/misc/printed/1.jpg" title="Modular car phone mount"></a>
-                    <a class="portfolio-box" href="img/misc/printed/2.jpg" title=""></a>
-                    <a class="portfolio-box" href="img/misc/printed/3.jpg" title=""></a>
-                    <a class="portfolio-box" href="img/misc/printed/4.jpg" title="A photogrammetry build mask of my friends face"></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">Some of the things I have designed and printed</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                  <div class="gallery-link">
-                    <a class="portfolio-box" href="#">
-                      <img class="img-fluid" src="img/misc/iot/1_tn.jpg" alt="">
-                      <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                            IoT Gallery
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="gallery">
-                    <a class="portfolio-box" href="img/misc/iot/1.jpg" title="Old room control setup. The relays were connected to the lights and fan in the room, and the buttons controlled them incase the wifi was out"></a>
-                    <a class="portfolio-box" href="img/misc/iot/2.jpg" title="Updated setup that fixed having to cut power cords"></a>
-                    <a class="portfolio-box" href="img/misc/iot/3.jpg" title="A website interface"></a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted mb-0">Various ways I have had IoT setups. These are controlled by servers scripts, voice integration, smartwatch apps, and scripts determine if I am home or not.</p>
-            </div>
-          </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/printed/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					   Gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/misc/printed/1.jpg" title="Modular car phone mount"></a>
+				<a class="portfolio-box" href="img/misc/printed/2.jpg" title=""></a>
+				<a class="portfolio-box" href="img/misc/printed/3.jpg" title=""></a>
+				<a class="portfolio-box" href="img/misc/printed/4.jpg" title="A photogrammetry build mask of my friends face"></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">Some of the things I have designed and printed</p>
+		  </div>
+		</div>
 
-        </div>
-      </div>
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+			   <div class="gallery-link">
+				<a class="portfolio-box" href="#">
+				  <img class="img-fluid" src="img/misc/iot/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					   IoT Gallery
+					 </div>
+				    </div>
+				  </div>
+				</a>
+			   </div>
+			   <div class="gallery">
+				<a class="portfolio-box" href="img/misc/iot/1.jpg" title="Old room control setup. The relays were connected to the lights and fan in the room, and the buttons controlled them incase the wifi was out"></a>
+				<a class="portfolio-box" href="img/misc/iot/2.jpg" title="Updated setup that fixed having to cut power cords"></a>
+				<a class="portfolio-box" href="img/misc/iot/3.jpg" title="A website interface"></a>
+			   </div>
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">Various ways I have had IoT setups. These are controlled by servers scripts, voice integration, smartwatch apps, and scripts determine if I am home or not.</p>
+		  </div>
+		</div>
+
+		<div class="col-lg-3 col-md-6 text-center">
+		  <div class="service-box mt-5 mx-auto">
+		    <div class="container-fluid p-0">
+			 <div class="row no-gutters">
+
+			   <a class="portfolio-box" href="http://ambrosiachain.com/" target="_blank">
+				  <img class="img-fluid" src="img/misc/ambrosia/1_tn.jpg" alt="">
+				  <div class="portfolio-box-caption">
+				    <div class="portfolio-box-caption-content">
+					 <div class="project-category text-faded">
+					   Ambrosia
+					 </div>
+				    </div>
+				  </div>
+				</a>
+
+			 </div>
+		    </div>
+		    <p class="text-muted mb-0">A quickly created cryptocurrency based on the idea of making pop-up restourants easier to use. AMBR conforms to ERC223 and is was created more for the experience than for use.</p>
+		  </div>
+		</div>
+
+	   </div>
+	 </div>
     </section>
 
 
